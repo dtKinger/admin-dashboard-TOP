@@ -228,16 +228,23 @@ a:hover{
 }
 
 .card {
-  gap: 8px;
-  padding: 6px;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
   border-left: 6px solid rgb(255, 204, 0);
   box-shadow: 3px 3px 3px 3px rgba(56, 56, 56, 0.5);
   border-radius: 5px;
   background-color: white;
   grid-column: 1 / 2;
   grid-row: span 1;
+  max-height: 200px;
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+.card h3{
+  padding: 0px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 
 .card p {
@@ -254,6 +261,12 @@ hr{
   grid-template-rows: 1fr 1fr 1fr;
   gap: 25px;
   padding: 20px;
+}
+
+.project-icons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .project1{
