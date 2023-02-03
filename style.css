@@ -83,7 +83,6 @@ header{
   color: var(--color-text-secondary);
   background-color: white;
   padding: 10px;
-  border: 1px solid red;
   grid-column: 2 / 3;
 }
 
@@ -289,6 +288,7 @@ hr{
 
 .right-panel{
   grid-column: 3 / 4;
+  grid-row: 1 / 4;
   display: grid;
   grid-template-rows: minmax(50vh, min-content) minmax(50vh, min-content);
 }
