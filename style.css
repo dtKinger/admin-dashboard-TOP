@@ -93,6 +93,9 @@ main {
   display: grid;
   grid-template-columns: 1.15fr 1.15fr 1fr;
   width: 100%;
+  gap: 25px;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 /* Will need to replace the OS styles */
@@ -289,7 +292,6 @@ hr{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 25px;
-  padding: 20px;
 }
 
 .project-icons{
