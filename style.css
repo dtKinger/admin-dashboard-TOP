@@ -237,8 +237,6 @@ a:hover{
   grid-row: span 1;
   max-height: 200px;
   overflow: scroll;
-  display: grid;
-  grid-template-rows: 4fr 1fr;
 }
 
 .card h3{
@@ -264,6 +262,7 @@ hr{
 }
 
 .project-icons{
+  
   display: flex;
   justify-content: flex-end;
   align-items: center;
