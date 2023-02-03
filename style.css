@@ -335,7 +335,7 @@ main p{
   grid-row: 1 / 4;
   display: grid;
   gap: 25px;
-  grid-template-rows: min-content minmax(50vh, min-content) minmax(50vh, min-content);
+  grid-template-rows: min-content minmax(50vh, min-content) min-content minmax(50vh, min-content);
 }
 
 hr{
