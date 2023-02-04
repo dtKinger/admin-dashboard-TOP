@@ -12,17 +12,24 @@
 <body>
   <header>
     <div class="row1">
-      <span class="search-items"><label for="search"><img src="grid-assets/header/search.png" alt="Search icon" class="icon"></label><input id="#search" type="search"></span><span><img src="grid-assets/header/notification.png" alt="" class="icon"></span><span><img src="grid-assets/avatar.png" alt="" class="avatar"></span><span class="username">Dan King</span>
-      <p class="username-big"></p>
+      <div class="row1__left">
+        <label for="search"><img src="grid-assets/header/search.png" alt="Search icon" class="icon__medium"></label><input id="search" type="search">
+      </div>
+      <div class="row1__right">
+        <img src="grid-assets/header/notification.png" alt="" class="icon__medium">
+        <img src="grid-assets/avatar.png" alt="" class="avatar">
+        <span class="header-username">Dan King</span>
+      </div>
+
     </div>
     <div class="row2">
-      <div class="header__left">
+      <div class="row2__left">
         <span><img src="grid-assets/avatar.png" alt="Your profile avatar" class="avatar avatar__lg"></span>
         <span class="user-info flex">
           <span class="greeting">Hi there,<br><span class="username-big">Dan King (@dtKinger)</span> </span>
         </span>
       </div>
-      <div class="header__right">
+      <div class="row2__right">
         <div class="grid-btn"><button class="btn-new">New</button></div>
         <div class="grid-btn"><button class="btn-upload">Upload</button></div>
         <div class="grid-btn"><button class="btn-share">Share</button></div>
