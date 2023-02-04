@@ -1,0 +1,25 @@
+{
+  "name": "admin-dashboard-top",
+  "version": "1.0.0",
+  "description": "Admin Dashboard Assignment for [The Odin Project](https://www.theodinproject.com/) Lesson: - Node path: [Intermediate HTML and CSS - final assignemnt](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtKinger/admin-dashboard-TOP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtKinger/admin-dashboard-TOP/issues"
+  },
+  "homepage": "https://github.com/dtKinger/admin-dashboard-TOP#readme",
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
