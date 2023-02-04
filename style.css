@@ -87,12 +87,17 @@ h4{
 
 header{
   min-height: var(--section-height-header);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   background-color: white;
   padding: 10px;
   grid-column: 2 / 3;
   z-index: 1;
-  box-shadow: 0px 2px 2px 2px rgba(56, 56, 56, 0.3)
+  box-shadow: 0px 2px 2px 2px rgba(56, 56, 56, 0.3);
+  padding: 20px 40px;
+
+  display: grid;
+  row-gap: 10px;
+  grid-template: 60px 80px / repeat(5, 1fr);
 }
 
 main {
@@ -105,6 +110,16 @@ main {
   padding: 25px;
   box-sizing: border-box;
 }
+
+main p{
+  font-size: .75rem;
+}
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
 
 /* Will need to replace the OS styles */
 input{
@@ -171,12 +186,18 @@ input:-webkit-autofill{
   border: 10px solid purple;
 }
 
+input[type="search"]{
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
 button{
-  background-color: rgb(56, 56, 56);
+  background-color: #105b7c;
   color: ivory;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
 }
 
 button:hover{
@@ -186,7 +207,6 @@ button:hover{
 button:active{
   transform: scale(0.9);
 }
-
 
 a, a:visited, a:active {
   color: inherit;
@@ -201,6 +221,14 @@ a:hover{
  /* =================== \
 |         Classes        |
  \ =================== */ 
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
 
 .sidebar{
   z-index: 1;
@@ -325,8 +353,9 @@ a:hover{
   grid-row: 1 / 2;
 }
 
-main p{
-  font-size: .75rem;
+.avatar__lg{
+  width: 56px;
+  height: 56px;
 }
 
 .right-panel{
@@ -335,11 +364,6 @@ main p{
   display: grid;
   gap: 25px;
   grid-template-rows: min-content minmax(50vh, min-content) min-content minmax(50vh, min-content);
-}
-
-hr{
-  margin-top: 20px;
-  margin-bottom: 15px;
 }
 
 .list-trending, .announcements{
@@ -377,8 +401,62 @@ hr{
   font-weight: bold;
 }
 
+.username-big{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.greeting{
+  font-size: .75rem;
+}
+
 .project-name{
   font-size: 0.7rem;
   font-weight: 500;
   color: gray;
 }
+
+.row1{
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.search-items{
+  grid-column: 1 / 4;
+}
+
+.row2{
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.header__left{
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.header__right{
+  grid-column: 4 / 6;
+
+  display: grid;
+  column-gap: 10px;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.user-info{
+  grid-column: 2 / 5;
+  grid-row: 1 / 2 ;
+
+  align-items: center;
+}
+
+
